@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#daf4f0"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="#457371">
+
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:text="100 Rs."
+                android:textColor="#daf4f0"
+                android:textSize="15sp">
+                ></TextView>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/transicon"
+                android:maxLines="1"
+                android:text="name2"
+                android:textColor="#daf4f0"
+                android:textSize="20sp">
+            </TextView>
+
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/transicon"
+                android:layout_toRightOf="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/currency"></ImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/image"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="#daf4f0"
+                android:textSize="20sp">
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/balance"
+                android:layout_below="@+id/name2"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="#daf4f0"
+                android:textSize="15sp">
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

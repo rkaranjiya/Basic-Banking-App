@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#daf4f0"
+    tools:context=".TransferActivity">
+
+    <TextView
+        android:id="@+id/ph_lab"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Phone"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pr_acno_lab" />
+
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="7577575757"
+        app:layout_constraintStart_toEndOf="@+id/ph_lab"
+        app:layout_constraintTop_toBottomOf="@+id/pr_acno" />
+
+    <TextView
+        android:id="@+id/pr_acno_lab"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ac No."
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pr_ifsc_lab" />
+
+    <TextView
+        android:id="@+id/pr_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="Balance"
+        app:layout_constraintStart_toEndOf="@+id/pr_bal_lab"
+        app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+    <TextView
+        android:id="@+id/pr_IFSC"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="IFSC"
+        app:layout_constraintStart_toEndOf="@+id/pr_ifsc_lab"
+        app:layout_constraintTop_toBottomOf="@+id/pr_email" />
+
+    <TextView
+        android:id="@+id/pr_email_lab"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Email"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_customer" />
+
+    <TextView
+        android:id="@+id/pr_acno"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="AB785245"
+        app:layout_constraintStart_toEndOf="@+id/pr_acno_lab"
+        app:layout_constraintTop_toBottomOf="@+id/pr_IFSC" />
+
+    <TextView
+        android:id="@+id/pr_bal_lab"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Balance"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ph_lab" />
+
+    <TextView
+        android:id="@+id/pr_ifsc_lab"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="IFCE"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pr_email_lab" />
+
+    <ImageView
+        android:id="@+id/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_bg"
+        android:layout_marginTop="172dp"
+        android:id="@+id/frame">
+
+        <ImageView
+            android:id="@+id/profile_dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/pr_trans_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#457371"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#b0d0cf"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:text="Transfer"
+        android:textColor="#daf4f0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pr_bal" />
+
+    <TextView
+        android:id="@+id/profile_customer"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Customer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/pr_email"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="Email"
+        app:layout_constraintStart_toEndOf="@+id/pr_email_lab"
+        app:layout_constraintTop_toBottomOf="@+id/profile_customer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
