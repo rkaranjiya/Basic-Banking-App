@@ -112,6 +112,6 @@ public class CustomersActivity extends AppCompatActivity implements RecyclerView
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        finish();
+        finishAffinity();
     }
 }
